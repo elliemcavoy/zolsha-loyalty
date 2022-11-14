@@ -1,0 +1,23 @@
+.overlay {
+    height: 100vh;
+    margin-top: -50px;
+    background-color: lightgrey;
+    z-index: 1500;
+    position: absolute;
+}
+
+#main-nav {
+    position: relative;
+    z-index: 1;
+}
+
+#loyalty {
+    position: absolute;
+    z-index: 1600;
+}
+
+.login {
+    position: fixed;
+    top: 100px;
+
+}
