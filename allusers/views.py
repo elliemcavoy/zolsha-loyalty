@@ -7,14 +7,14 @@ def all_users(request):
     """ View to render the menu page """
 
     users = UserProfile.objects.all()
-    #if request.GET:
+    if request.GET:
 
-       # if 'q' in request.GET:
-        #    query = request.GET['q']
+       if 'q' in request.GET:
+            query = request.GET['q']
 
-        #    queries = Q(name__icontains=query)
-        #from django.contrib import admin
-    users = users.filter(queries)
+            queries = Q(name__icontains=query)
+        
+            users = users.filter(queries)
 
 
     context = {

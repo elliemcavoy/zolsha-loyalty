@@ -25,6 +25,13 @@
                 {{ item.name }}
             </h5>
         </div>
+        {{ item.user }}
+
+        <a href="{% url 'profile' item.user %}">
+
+            <button type="submit" class="buttons rounded font-weight-bold">View</button>
+        </a>
+
 
     </div>
 </div>
