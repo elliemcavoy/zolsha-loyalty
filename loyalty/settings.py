@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-j^k(@qfok&ky^rh(g*a!am+f!+6t^e!+ozvm7+sl-s+2h1-nm9
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = ['https://8000-elliemcavoy-zolshaloyal-tqb2rfn1ujg.ws-eu90.gitpod.io']
 
 
 # Application definition
@@ -42,6 +43,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'crispy_forms',
     'index',
+    'allusers',
+    'profiles'
+    
 ]
 
 MIDDLEWARE = [
